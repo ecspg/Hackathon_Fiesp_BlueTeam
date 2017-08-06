@@ -26,7 +26,7 @@ function getTitle(text) {
 }
 
 // Make the actual CORS request.
-function makeCorsRequest(text) {
+function makeCorsRequest(text, image = "") {
   // This is a sample server that supports CORS.
   var url = 'https://sheltered-river-24109.herokuapp.com';
 
@@ -49,7 +49,7 @@ function makeCorsRequest(text) {
 
   // xhr.setRequestHeader("Content-type", "application/json");
   // xhr.setRequestHeader("Authorization", "Basic " + Nzg0Zjk5MjMtMDA4Ny00NDFjLWIxMzEtNDgwYjIwMDBiM2E2OjFFUjZNUVU3NFFzQg==);
-  var data = JSON.stringify({"text": text});
+  var data = JSON.stringify({"text": text}, {"imageURL":image});
 
   xhr.send(data);
 }
@@ -68,7 +68,6 @@ const facebook_clickbait = function(node) {
         console.log(i.textContent)
         msgSet.add(i.textContent)
         makeCorsRequest(i.textContent)
-
       }
     });
   });

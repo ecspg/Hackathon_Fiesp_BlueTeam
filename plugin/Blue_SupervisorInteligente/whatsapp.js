@@ -51,6 +51,7 @@ function makeCorsRequest(text) {
   // xhr.setRequestHeader("Authorization", "Basic " + Nzg0Zjk5MjMtMDA4Ny00NDFjLWIxMzEtNDgwYjIwMDBiM2E2OjFFUjZNUVU3NFFzQg==);
   var data = JSON.stringify({"text": text});
 
+
   xhr.send(data);
 }
 
@@ -80,7 +81,7 @@ const facebook_clickbait = function(node) {
         console.log(numbUser +" "+ nameUser + " - " + i.textContent)
         msgSet.add(i.textContent)
 
-        makeCorsRequest(i.textContent)
+        makeCorsRequest(numbUser +" "+ nameUser + " - " + i.textContent)
       //   var xhr = new XMLHttpRequest();
       //   var url = "https://posttestserver.com/post.php";
       //   xhr.open("POST", url, true);
