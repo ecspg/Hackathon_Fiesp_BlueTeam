@@ -1,0 +1,15 @@
+certifi==2017.7.27.1
+chardet==3.0.4
+Django==1.11.4
+django-cors-headers==2.1.0
+django-filter==1.0.4
+django-jet==1.0.6
+djangorestframework==3.6.3
+drfdocs==0.0.11
+gunicorn==19.7.1
+idna==2.5
+Markdown==2.6.8
+psycopg2==2.7.3
+pytz==2017.2
+requests==2.18.3
+urllib3==1.22

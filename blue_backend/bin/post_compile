@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo "=> Performing database migrations..."
+python manage.py migrate --settings=blue_backend.production
+
+echo "=> Load Initial Fixtures in database..."
+python manage.py loaddata --settings=blue_backend.production fixtures/initial_data.json
