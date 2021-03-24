@@ -31,7 +31,7 @@ pysolr==3.6.0
 python-dateutil==2.6.0
 pytz==2017.2
 requests==2.18.3
-rsa==3.4.2
+rsa==4.1
 service-identity==17.0.0
 six==1.10.0
 subprocess32==3.2.7
