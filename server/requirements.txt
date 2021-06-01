@@ -37,7 +37,7 @@ six==1.10.0
 subprocess32==3.2.7
 Twisted==20.3.0
 uritemplate==3.0.0
-urllib3==1.22
+urllib3==1.26.5
 watson-developer-cloud==0.26.1
 Werkzeug==0.12.1
 yapf==0.16.0
